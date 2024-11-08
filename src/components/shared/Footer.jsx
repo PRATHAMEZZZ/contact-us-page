@@ -6,19 +6,19 @@ const footerLinks = [
   {
     title: "What We Do",
     links: [
-      { name: "Intro", url: "https://agentc-contact-us.netlify.app/intro" },
-      { name: "Home", url: "https://agentc-contact-us.netlify.app" },
-      { name: "Work", url: "https://agentc-contact-us.netlify.app" },
-      { name: "Pricing", url: "https://agentc-contact-us.netlify.app" },
-      { name: "Contact Us", url: "https://agentc-contact-us.netlify.app" },
+      { name: "Intro", url: "/intro" },
+      { name: "Home", url: "/home" },
+      { name: "Work", url: "/work" },
+      { name: "Pricing", url: "/pricing" },
+      { name: "Contact Us", url: "/contact-us" },
     ],
   },
   {
     title: "What We Are",
     links: [
-      { name: "About", url: "https://agentc-contact-us.netlify.app" },
-      { name: "News", url: "https://agentc-contact-us.netlify.app" },
-      { name: "Testimonials", url: "https://agentc-contact-us.netlify.app" },
+      { name: "About", url: "/about" },
+      { name: "News", url: "/news" },
+      { name: "Testimonials", url: "/testimonials" },
     ],
   },
 ];
@@ -34,6 +34,7 @@ const Footer = () => {
               Dsgnr. is an award-winning creative and design agency <br /> based
               in New York, USA.
             </p>
+
             <div className="flex items-center space-x-10 border border-1 border-[#FEC00A] min-w-[100px] px-8 py-4">
               <FaEnvelope size={40} />
               <a
@@ -44,6 +45,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
           <div className="flex justify-between  flex-wrap gap-x-20">
             {footerLinks.map((column, index) => (
               <div key={index} className="mb-8 lg:mb-8">
