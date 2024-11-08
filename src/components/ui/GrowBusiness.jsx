@@ -3,7 +3,7 @@ import React from "react";
 const GrowBusiness = () => {
   return (
     <div
-      className="bg-cover bg-center py-20 sm:py-36 md:py-36 lg:py-36 flex flex-col justify-center items-center space-y-8 sm:space-y-8 md:space-y-8 lg:flex-row lg:space-x-12 relative"
+      className="bg-cover bg-center py-20 sm:py-36 md:py-36 lg:py-36 flex flex-col justify-center items-center space-y-8 sm:space-y-8 md:space-y-8 lg:flex-row lg:space-x-12 relative mt-0 sm:mt-10 md:mt-20 lg:mt-20"
       style={{
         backgroundImage: "url('/images/contact-us/banner.jpg')",
       }}
