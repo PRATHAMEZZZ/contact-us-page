@@ -23,7 +23,7 @@ const Brands = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-20">
       <p className="text-center text-[18px] sm:text-[44px] md:text-[44px] font-bold leading-[40.62px]  sm:leading-[55.62px] md:leading-[55.62px] lg:leading-[55.62px] mb-0 sm:mb-10 md:mb-10 lg:mb-10 decoration-skip-ink ">
         We worked with the world's biggest <br className="" />
         brands and the most innovative startups
