@@ -6,6 +6,7 @@ import {
   submitForm,
 } from "../../store/slices/formSlice";
 import Swal from "sweetalert2";
+import { FaSpinner } from "react-icons/fa";
 
 const ContactUsForm = () => {
   const dispatch = useDispatch();
@@ -115,13 +116,16 @@ const ContactUsForm = () => {
                 className="mt-1 px-3 py-5 w-full border-2 border-slate-900 placeholder-style"
               />
             </div>
-
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full py-4 px-4 bg-neutral-900 text-white font-small hover:bg-neutral-800 disabled:bg-neutral-400 transition-all text-2xl"
+              className="w-full py-4 px-4 bg-neutral-900 text-white font-small hover:bg-neutral-800 disabled:bg-neutral-400 transition-all text-2xl text-center flex justify-center items-center"
             >
-              {status === "loading" ? "Sending..." : "Send Proposal"}
+              {status === "loading" ? (
+                <FaSpinner className="animate-spin text-2xl" />
+              ) : (
+                "Send Proposal"
+              )}
             </button>
           </form>
         </div>
