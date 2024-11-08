@@ -16,9 +16,9 @@ const footerLinks = [
   {
     title: "What We Are",
     links: [
-      { name: "About", url: "/about" },
-      { name: "News", url: "/news" },
-      { name: "Testimonials", url: "/testimonials" },
+      { name: "About", url: "https://agentc-contact-us.netlify.app" },
+      { name: "News", url: "https://agentc-contact-us.netlify.app" },
+      { name: "Testimonials", url: "https://agentc-contact-us.netlify.app" },
     ],
   },
 ];
