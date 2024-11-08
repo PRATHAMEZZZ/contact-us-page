@@ -1,6 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setFormField, resetForm, submitForm } from "../../store/slices/formSlice";
+import {
+  setFormField,
+  resetForm,
+  submitForm,
+} from "../../store/slices/formSlice";
 import Swal from "sweetalert2";
 
 const ContactUsForm = () => {
@@ -52,12 +56,12 @@ const ContactUsForm = () => {
           <img
             src="/images/contact-us/Side-Image.jpg"
             alt="Contact Us"
-            className="w-full h-[600px] md:h-[700px] object-cover rounded-lg"
+            className="w-full h-[350px] sm:h-[600px] lg:h-[700px] md:h-[700px] object-cover rounded-lg"
           />
         </div>
 
         <div className="w-full md:w-3/5 p-6">
-          <p className="text-[34px] sm:text-[44px] lg:text-[44px] font-[700] leading-[55.62px] text-right md:text-right mb-6">
+          <p className="text-[30px] sm:text-[44px] md:text-[44px] lg:text-[44px] font-[700] leading-[40px] sm:leading-[55.62px] md:leading-[55.62px] lg:leading-[55.62px] text-right md:text-right mb-6">
             We'd love to hear
             <br />
             from you.

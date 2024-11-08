@@ -29,27 +29,27 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-between">
           <div className="lg:w-1/3">
-            <h3 className="text-5xl font-semibold mb-4">dsgnr.</h3>
+            <h3 className="text-3xl sm:text-5xl md:text-5xl lg:text-5xl font-semibold mb-4">
+              dsgnr.
+            </h3>
             <p className="text-[20px] sm:text-[24px] md:text-[24px] lg:text-[24px] font-medium leading-[35px] text-left my-10">
               Dsgnr. is an award-winning creative and design agency <br /> based
               in New York, USA.
             </p>
-
             <div className="flex items-center space-x-10 border border-1 border-[#FEC00A] min-w-[100px] px-8 py-4">
               <FaEnvelope size={40} />
               <a
                 href="mailto:info@dsgnr.com"
-                className="text-white-400 text-xl font-bold"
+                className="text-white-400 text-lg sm:text-xl md:text-xl lg:text-xl font-bold"
               >
                 info@dsgnr.com
               </a>
             </div>
           </div>
-
           <div className="flex justify-between  flex-wrap gap-x-20">
             {footerLinks.map((column, index) => (
               <div key={index} className="mb-8 lg:mb-8">
-                <h3 className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-semibold mb-4">
+                <h3 className="text-xl sm:text-3xl md:text-3xl lg:text-3xl font-semibold mb-4">
                   {column.title}
                 </h3>
                 <ul>
@@ -57,7 +57,7 @@ const Footer = () => {
                     <li key={idx}>
                       <a
                         href={link.url}
-                        className="block py-1 text-white hover:text-[#FEC00A] text-xl sm:text-2xl md:text-2xl lg:text-2xl"
+                        className="block py-1 text-white hover:text-[#FEC00A] text-lg sm:text-2xl md:text-2xl lg:text-2xl"
                       >
                         {link.name}
                       </a>
@@ -69,8 +69,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row mt-16 text-sm justify-between items-center">
-          <div className="flex text-2xl space-x-10 mb-4 lg:mb-0">
+        <div className="flex flex-col lg:flex-row mt-5 sm:mt-16 md:mt-16 lg:mt-16 text-sm justify-between items-center">
+          <div className="flex text-xl sm:text-2xl md:text-2xl lg:text-2xl space-x-10 mb-4 lg:mb-0">
             <p>Privacy Policy</p>
             <p>Terms</p>
           </div>
