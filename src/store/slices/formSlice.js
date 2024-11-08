@@ -51,7 +51,7 @@ const formSlice = createSlice({
       })
       .addCase(submitForm.rejected, (state, action) => {
         state.status = "error";
-        state.error = action.payload || 'Something went wrong';
+        state.error = action.payload;
       });
   },
 });

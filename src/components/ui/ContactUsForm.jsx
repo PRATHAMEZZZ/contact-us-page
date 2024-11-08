@@ -40,7 +40,7 @@ const ContactUsForm = () => {
       } else if (result.type === "form/submitForm/rejected") {
         Swal.fire({
           title: "Error",
-          text: error,
+          text: error || "Submission failed. Please try again later.",
           icon: "error",
           showConfirmButton: false,
           timer: 1500,
